@@ -2,7 +2,7 @@ nfancurve
 ---------
 You are probably wondering why I have chosen to write this script in Bash. The reason is very simple; I wanted a script with the minimum number of dependencies possible. To get this script up-and-running you _technically_ only need the `temp.sh` file, and the `config` file. If you don't have a certain dependency (i.e. git or procps) you can just remove the code that uses them.
 
-The current version of the script is **version 16**.
+The current version of the script is **version 17**.
 
 This script is currently set up for Celsius. However, it can easily be modified for other temperature scales.
 
@@ -52,6 +52,9 @@ There are unofficial AUR packages maintained by [@Scrumplex](https://github.com/
 - [@zJelly](https://github.com/zJelly), for working on an AMD-GPU supporting fork
 - [@dpayne](https://github.com/dpayne), for adding useful script parameters
 - [@Scrumplex](https://github.com/Scrumplex), for adding check to avoid errors when config is missing, and maintaining the AUR package
+- [@stefmitropoulos](https://github.com/stefmitropoulos), for greatly improving the way config files are loaded
+- [@mklement0](https://stackoverflow.com/users/45375/mklement0), (stackoverflow) for a [POSIX implimentation](https://stackoverflow.com/questions/29832037/how-to-get-script-directory-in-posix-sh) of resolving file symlinks
+- [@xberg](https://github.com/xberg), for finding and fixing a bug with the multi-GPU side of the script
 
 ## TODO
 - ~~make sure that "CoolBits" is enabled~~ - _not really the scope of this script_
@@ -60,3 +63,4 @@ There are unofficial AUR packages maintained by [@Scrumplex](https://github.com/
 - add nouveau support (once they fix Pascal)
 - add AMD support?
 - add support for GPU's that have more than one controllable fan (i.e. >1 fan controller)
+- make it completely POSIX compliant
